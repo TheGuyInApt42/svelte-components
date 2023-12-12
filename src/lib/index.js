@@ -1,4 +1,5 @@
 // Reexport your entry components here
-import ExternalLink from './ExternalLink.svelte';
+import ExternalLink from './components/ExternalLink.svelte';
+import Youtube from './components/Youtube.svelte';
 
-export { ExternalLink };
+export { ExternalLink, Youtube };

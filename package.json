@@ -1,6 +1,6 @@
 {
-	"name": "svelte-components",
-	"version": "0.0.1",
+	"name": "@theguyinapt42/svelte-components",
+	"version": "0.0.3",
 	"description": "A reusable Svelte component library",
     "keywords": [
         "components",
@@ -24,7 +24,6 @@
 	},
 	"exports": {
 		".": {
-			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
 		}
 	},
