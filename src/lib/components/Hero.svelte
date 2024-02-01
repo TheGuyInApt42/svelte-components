@@ -1,6 +1,6 @@
 <div class="hero">
 	<!--This feels like the wrong solution here :/ -->
-	<fieldset class="hero2-text">
+	<fieldset class="hero-text">
 		<legend class="border-text">Get Started</legend>
 		<h1>Mr. Do It All</h1>
 		<p>Customer Satisfaction is my attraction</p>
@@ -14,62 +14,8 @@
 	@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@100;500&family=IBM+Plex+Serif:ital,wght@0,100;0,500;0,600;0,700;1,500;1,700&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
-	body,
-	html {
-		width: 100%;
-		height: 100%;
-		padding: 0;
-		margin: 0;
-		position: relative;
-	}
-	body button,
-	html button {
-		cursor: pointer;
-	}
-	body a,
-	html a {
-		text-decoration: none;
-	}
 
-	.hero1 {
-		width: 90%;
-		height: 140%;
-		top: -20%;
-		right: -20%;
-		padding: 0;
-		margin: 0;
-		position: relative;
-		float: right;
-		border-radius: 50%;
-		background-size: cover;
-		background-image: url('/images/junk.jpg');
-		background-position: center top;
-	}
-
-	.hero-container {
-		margin: 0;
-		padding: 0;
-		position: relative;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		background-color: #c76baa;
-	}
-
-	.bubble {
-		position: absolute;
-		margin: 0;
-		padding: 0;
-		width: 65%;
-		height: 140%;
-		border-radius: 0% 0% 50% 50%;
-		left: -30%;
-		top: -20%;
-		background-color: rgba(0, 0, 0, 0.8);
-	}
-
-	.hero-text,
-	.hero2-text {
+	.hero-text {
 		position: absolute;
 		width: 20%;
 		left: 5%;
@@ -79,14 +25,12 @@
 		font-weight: 300;
 		font-size: 22px;
 	}
-	.hero-text h1,
-	.hero2-text h1 {
+	.hero-text h1 {
 		font-weight: 400;
 		font-family: 'Varela Round', sans-serif;
 		font-size: 46px;
 	}
-	.hero-text button,
-	.hero2-text button {
+	.hero-text button {
 		margin-top: 25px;
 		border-radius: 10px;
 		padding: 10px;
@@ -96,21 +40,18 @@
 		box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
 		font-size: 22px;
 	}
-	.hero-text button a,
-	.hero2-text button a {
+	.hero-text button a {
 		letter-spacing: 1.5px;
 		font-family: 'Varela Round', sans-serif;
 		color: #6f2a59;
 	}
-	.hero-text button:hover,
-	.hero2-text button:hover {
+	.hero-text button:hover {
 		transform: translate(1px, 1px);
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 		color: #4a1c3b;
 	}
 
-	.hero2,
-	.hero3 {
+	.hero {
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -136,7 +77,7 @@
 		overflow: hidden;
 	}
 
-	.hero2-text {
+	.hero-text {
 		z-index: 0;
 		width: 35%;
 		top: 35%;
@@ -147,15 +88,15 @@
 		padding-left: 40px;
 		padding-right: 30px;
 	}
-	.hero2-text p {
+	.hero-text p {
 		margin: 0px;
 	}
-	.hero2-text h1 {
+	.hero-text h1 {
 		font-family: 'Abril Fatface', cursive;
 		font-size: 52px;
 		letter-spacing: 4px;
 	}
-	.hero2-text button {
+	.hero-text button {
 		position: relative;
 		border: solid #deb221 3px;
 		border-radius: 0;
@@ -168,7 +109,7 @@
 		color: #deb221;
 		font-size: 18px;
 	}
-	.hero2-text button:hover {
+	.hero-text button:hover {
 		transform: translate(0px);
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 		color: #deb221;
@@ -176,68 +117,25 @@
 		border: solid #deb221 3px;
 	}
 
-	.sticky {
-		position: fixed;
-		bottom: 0;
-	}
 
-	.hero3 {
-		padding: 0;
-		margin: 0;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-			url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2823&q=80');
-		background-position: left top;
-	}
-	.hero3 .hero3-text {
-		position: relative;
-		text-align: center;
-		font-family: 'IBM Plex Sans', sans-serif;
-		top: 25%;
-		color: white;
-		font-size: 30px;
-		font-weight: 100;
-	}
-	.hero3 .hero3-text h1 {
-		font-size: 46px;
-		text-transform: uppercase;
-		letter-spacing: 2.6px;
-		font-family: 'Gotu', sans-serif;
-	}
-	.hero3 .hero3-text button {
-		margin-top: 20px;
-		background-color: rgba(0, 0, 0, 0.1);
-		color: white;
-		font-size: 20px;
-		padding: 10px;
-		border-radius: 5px;
-		letter-spacing: 2.2px;
-		text-transform: uppercase;
-		font-family: 'IBM Plex Sans', sans-serif;
-	}
-	.hero3 .hero3-text button:hover {
-		background-color: rgba(0, 0, 0, 0.5);
-	}
+
 
 	@media only screen and (max-width: 600px) {
-		.hero-text,
-		.hero2-text,
-		.hero3-text {
+
+		.hero-text {
 			top: 10px;
 			margin: auto;
 		}
-		.hero-text h1,
-		.hero2-text h1,
-		.hero3-text h1 {
+
+		.hero-text h1 {
 			font-size: 30px;
 		}
-		.hero-text p,
-		.hero2-text p,
-		.hero3-text p {
+
+		.hero-text p {
 			font-size: 18px;
 		}
-		.hero-text button,
-		.hero2-text button,
-		.hero3-text button {
+	
+		.hero-text button {
 			font-size: 16px;
 		}
 	}
